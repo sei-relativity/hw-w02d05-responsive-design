@@ -117,3 +117,33 @@ a {
     margin-right: 15px;
     padding-right: 15px;
   }
+
+
+  @media only screen and (max-width: 900px){
+    body{
+      width: 95vw;  }
+    .page{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-evenly;
+    }
+    .nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+  
+    .main {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    li, h1{
+      font-weight: bolder;
+    }
+  
+  
+  }
+  
