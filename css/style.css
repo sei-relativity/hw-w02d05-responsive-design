@@ -11,21 +11,51 @@
   - @media
 */
 
-body {
-  background-color: #333;
-  font: 15px/1.4 Helvetica, Arial, sans-serif;
-  margin: 0;
-  width:900px;
-  margin:auto;
-  padding: 25px 25px 50px;
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 900px) {
+
+  ul.nav {
+    display: block;
+    width: 100%;
+  }
+
+  ul.nav li {
+    background-color: #B00;
+    display: inline-block;
+    padding: 0;
+
+    border-right: 1px solid #900;
+    width: auto;
+  }
+
+  div.main {
+    margin: 0 auto;
+    padding: 0 20px 20px;
+    width: 100%;
+  }
+
 }
 
-a {
-  color: #C00;
+/* @media only screen and (max-width: 576px) {
+
+  ul.nav li {
+    width: 100%;
+  }
+} */
+
+body {
+  background-color: #333;
+  margin: auto;
+  padding: 25px;
+
+  /* Fix the "width" by giving it 100% and forcing it to shrink with "max-width" */
+  width: 100%;
+  max-width: 900px;
 }
 
 .page {
-  background-color: #fff;
+  background-color: hsla(0, 0%, 98%, 1);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
@@ -42,7 +72,9 @@ a {
 }
 
   .header img {
-    width: 30%;
+    /* width: 30%; */
+    width: 100%;
+    max-width: 30%;
   }
 
 .nav {
@@ -67,19 +99,6 @@ a {
     background-color: #D00;
   }
 
-.main {
-  float: left;
-  margin: 0 0 30px;
-  width: 65%;
-}
-
-  .main img {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 5px;
-    width: 30%;
-  }
-
 .breadcrumbs {
   list-style: none;
   margin: 20px 0;
@@ -100,6 +119,25 @@ a {
     content: none;
   }
 
+.main {
+  float: left;
+  margin: 0 0 30px;
+  width: 65%;
+}
+
+  .main img {
+    float: left;
+
+    /* Fix the "img" margins */
+    margin: 20px 20px 10px 0;
+    width: 30%;
+  }
+
+  .main p {
+    /* Fix the "p" margin-top */
+    margin-top: 20px;
+  }
+
 .footer {
   background-color: #B00;
   clear: both;
@@ -117,3 +155,8 @@ a {
     margin-right: 15px;
     padding-right: 15px;
   }
+
+/* UNIVERSAL SELECTORS */
+a {
+  color: #C00;
+}
