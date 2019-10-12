@@ -117,3 +117,20 @@ a {
     margin-right: 15px;
     padding-right: 15px;
   }
+
+  @media screen and (min-width : 400px) and ( max-width: 900px){
+    .nav{
+      float:none;
+      margin: 5%;
+      width:25%;
+      overflow: auto;
+    }
+
+    .main{
+      float:none;
+      margin: 5%;
+      width:65%;
+      overflow: auto;
+
+    }
+  }
