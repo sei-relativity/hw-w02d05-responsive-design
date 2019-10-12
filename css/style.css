@@ -117,3 +117,21 @@ a {
     margin-right: 15px;
     padding-right: 15px;
   }
+  /* /////// */
+  
+  }
+  @media only screen and (max-width: 900px) {
+    body {
+    overflow: auto;
+      margin: auto;
+    }
+    .nav{
+    width: 25%;  
+    margin-right:5% ;
+
+    }
+    .main {
+      width: 65%;
+    }
+  }
+
