@@ -15,8 +15,8 @@ body {
   background-color: #333;
   font: 15px/1.4 Helvetica, Arial, sans-serif;
   margin: 0;
-  width:900px;
-  margin:auto;
+  width:100%;
+  margin: 0 auto;
   padding: 25px 25px 50px;
 }
 
@@ -29,7 +29,9 @@ a {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
-  overflow: hidden;
+  width:90%;
+  max-width: 100%;
+  /* overflow: hidden; */
 }
 
 .header {
@@ -68,9 +70,10 @@ a {
   }
 
 .main {
-  float: left;
-  margin: 0 0 30px;
-  width: 65%;
+  /* float: left; */
+  margin: 0 auto;
+  padding: 5%;
+  width: 90%;
 }
 
   .main img {
@@ -116,4 +119,24 @@ a {
     display: inline;
     margin-right: 15px;
     padding-right: 15px;
+  }
+
+  @media only screen and (max-width:700px){
+   .main{
+    background-color: yellow;
+   }
+
+   
+    ul.nav {
+      width:100%;
+      background-color: blueviolet;
+      display: block;
+
+    }
+    ul.nav > li {
+      /* width: ; */
+      background-color: yellowgreen;
+      display: inline-block;
+    }
+  
   }
