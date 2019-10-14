@@ -1,11 +1,9 @@
 /*
   Red: #B00;
   Dark Red: #900;
-
   Max page width: 900px
   Nav width: 25%, with 5% right margin
   Main width: 65%
-
   CSS you'll need:
   - max-width
   - @media
@@ -46,6 +44,7 @@ a {
   }
 
 .nav {
+ 
   background-color: #B00;
   list-style: none;
   float: left;
@@ -101,7 +100,7 @@ a {
   }
 
 .footer {
-  background-color: #B00;
+  background-color:#B00;
   clear: both;
   margin: 0;
   padding: 10px 20px;
@@ -117,3 +116,27 @@ a {
     margin-right: 15px;
     padding-right: 15px;
   }
+
+
+  @media screen and (max-width: 900px){
+    .footer{
+      display: none;
+    }
+    .nav{
+    width: 100%;
+  }
+  .nav li{
+    display: inline-block;
+    float: left;
+    border-right: 1px solid #900;
+  }
+  .main{
+    margin: 0;
+    padding: 0 20px;
+    width: auto;
+    float: none;
+  
+
+  }
+
+}
