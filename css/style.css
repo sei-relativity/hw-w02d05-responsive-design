@@ -117,3 +117,10 @@ a {
     margin-right: 15px;
     padding-right: 15px;
   }
+  @media only screen and (max-width: 600px){
+
+    body{
+      width: 100%;
+    }
+    
+  }
