@@ -117,3 +117,25 @@ a {
     margin-right: 15px;
     padding-right: 15px;
   }
+
+  @media screen and  ( max-width: 900px){
+    
+    
+    .nav {
+      margin: 4%;
+      width:100%;
+      /* padding: 0%; */
+    }
+
+  .nav li {
+      display: inline-block;
+
+    }  
+
+    .main{
+      margin: 10%;
+      width:65%;
+      
+
+    }
+  }
